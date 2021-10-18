@@ -3,9 +3,16 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+
+        Test t = new Test();
+
         Scanner reader = new Scanner(System.in);
+        t.printTestMy("---------------------------Calculator--------------------------------");
         System.out.println("Enter num1: ");
         double num1 = reader.nextDouble();
+
+        t.printTestMy("");
+
 
         System.out.println("Enter num2: ");
         double num2 = reader.nextDouble();
@@ -16,9 +23,11 @@ public class Main {
         double result;
         switch (operator){
             case '+':
+                t.printTest();
                 result = num1+num2;
                 break;
             case '-':
+                t.printTestMy("my custom test");
                 result = num1-num2;
                 break;
             case '*':
@@ -35,3 +44,8 @@ public class Main {
 
     }
 }
+
+
+
+
+
